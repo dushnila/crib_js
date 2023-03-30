@@ -1,0 +1,23 @@
+# В директории с проектом
+npm i --save-dev jest
+--------
+Чтобы Jest корректно работал с системой модулей, добавьте в package.json следующую опцию:
+
+"type": "module"
+  
+------
+
+Jest ожидает, что тесты находятся в директории __tests__
+
+пример имени файла расположенного в директории: __tests__/index.test.js 
+
+пример кода в нем:
+
+import reverse from '../src/index.js';
+
+test('reverse', () => {
+  expect(reverse('hello')).toEqual('olleh');
+  expect(reverse('')).toEqual('');
+});
+
+-------
