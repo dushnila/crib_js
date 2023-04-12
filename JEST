@@ -1,6 +1,7 @@
 # В директории с проектом
 npm i --save-dev jest
 --------
+
 Чтобы Jest корректно работал с системой модулей, добавьте в package.json следующую опцию:
 
 "type": "module"
@@ -21,3 +22,16 @@ test('reverse', () => {
 });
 
 -------
+
+Для запускаа у себя в проекте: 
+NODE_OPTIONS=--experimental-vm-modules npx jest
+
+-------
+
+Покрытие кода:
+npx jest --coverage
+
+------
+
+
+
