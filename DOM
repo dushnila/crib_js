@@ -1,0 +1,20 @@
+НАЙТИ ЭЛЕМЕНТ
+
+Для поиска элемента <div> с атрибутом data-editable-target равным "name" 
+const divElement = document.querySelector('div[data-editable-target="name"]');
+
+
+СОЗДАТЬ ЭЛЕМЕНТ 
+
+
+УДАЛИТЬ ЭЛЕМЕНТЫ ИЗ ЭЛЕМЕНТА
+
+const divElement = document.getElementById('yourDivElementId'); // Замените 'yourDivElementId' на идентификатор вашего элемента div
+divElement.innerHTML = '';
+
+или 
+
+const divElement = document.getElementById('yourDivElementId');
+while (divElement.firstChild) {
+  divElement.removeChild(divElement.firstChild);
+}
